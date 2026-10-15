@@ -222,9 +222,9 @@
        Ejemplo: https://www.youtube.com/watch?v=dQw4w9WgXcQ  ->  id: "dQw4w9WgXcQ"
        Agrega o quita líneas según necesites. */
     const videos = [
-      { titulo: "Daddy Yankee", artista: "Botz(Besame otra vez)", id: "dQw4w9WgXcQ" },
-      { titulo: "Mix 2026", artista: "Grupo Frontera", id: "dQw4w9WgXcQ" },
-      { titulo: "Nombre de la canción 3", artista: "Artista 3", id: "dQw4w9WgXcQ" }
+      { titulo: "Daddy Yankee", artista: "Botz(Besame otra vez)", id: "ZfdwnCz-kiA" },
+      { titulo: "Mix 2026", artista: "Grupo Frontera", id: "Yw9i0J_dRZw" },
+      { titulo: "Te estoy correteando", artista: "Latin mafia", id: "PIVr5H9EShI" }
     ];
 
     const lista = document.getElementById("lista-videos");
@@ -238,10 +238,10 @@
       col.className = "col-md-6 col-lg-4";
       col.innerHTML = `
         <button class="video-card" type="button" aria-label="Reproducir ${v.titulo} de ${v.artista}">
-          <div class="miniatura">
-            <img src="https://www.youtube.com/watch?v=ZfdwnCz-kiA" alt="" loading="lazy">
-            <span class="play" aria-hidden="true"><i class="bi bi-play-circle-fill"></i></span>
-          </div>
+  <div class="miniatura">
+    <img src="https://img.youtube.com/vi/${v.id}/hqdefault.jpg" alt="" loading="lazy">
+    <span class="play" aria-hidden="true"><i class="bi bi-play-circle-fill"></i></span>
+  </div>
           <div class="info">
             <h3>${v.titulo}</h3>
             <p>${v.artista}</p>
